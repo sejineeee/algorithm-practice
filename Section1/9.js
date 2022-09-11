@@ -25,6 +25,9 @@ function regExpSolution(str) {
   return answer;
 }
 
+// replace는 정규표현식, 교체문자열
+// string.replace(regexp|substr, newSubstr)
+
 let otherStr = "AIRPLANE";
 console.log(regExpSolution(otherStr));
 
@@ -43,5 +46,16 @@ function otherSolution(str) {
 
 console.log(otherSolution(otherStr));
 
-// replace는 정규표현식, 교체문자열
-// string.replace(regexp|substr, newSubstr)
+// + 10번에서 for of 문을 사용한 것이 생각나서 9번 문제에 다시 적용해보았다.
+function forOfSolution(str) {
+  let answer = "";
+  for (const el of str) {
+    if (el === "A") {
+      answer += "#";
+    } else {
+      answer += el;
+    }
+  }
+  return answer;
+}
+console.log(forOfSolution(otherStr));
