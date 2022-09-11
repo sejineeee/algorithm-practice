@@ -15,3 +15,17 @@ function solution(str) {
 
 let str = "KoreaTimeGood";
 console.log(solution(str));
+
+// 소문자 찾기
+
+function otherSolution(str) {
+  let answer = 0;
+  for (const s of str) {
+    if (s === s.toLowerCase()) {
+      answer += 1;
+    }
+  }
+  return answer;
+}
+
+console.log(otherSolution(str));
