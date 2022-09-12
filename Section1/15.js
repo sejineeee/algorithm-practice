@@ -21,3 +21,23 @@ let str2 = "good";
 
 console.log(solution(str));
 console.log(solution(str2));
+
+// substring을 이용한 방법
+// substring() 메서드는 시작 인덱스부터 종료인덱스 전까지 문자열 반환
+// str.substring(indexStart [, indexEnd])
+// 종료인덱스는 미포함된다. 전까지임!
+
+function otherSolution(s) {
+  let answer = "";
+  if (s.length % 2 === 0) {
+    let num = s.length / 2 - 1;
+    answer = s.substring(num, num + 2);
+  } else {
+    let num = Math.floor(s.length / 2);
+    answer = s.substring(num, num + 1);
+  }
+  return answer;
+}
+
+console.log(otherSolution(str));
+console.log(otherSolution(str2));
