@@ -25,3 +25,27 @@ function solution(userA, userB) {
 let userA = [2, 3, 3, 1, 3];
 let userB = [1, 1, 2, 2, 3];
 console.log(solution(userA, userB));
+
+function otherSolution(userA, userB) {
+  let answer = [];
+  for (let i = 0; i < userA.length; i++) {
+    switch (userA[i] - userB[i]) {
+      case 1:
+        answer.push("A");
+        break;
+      case -2:
+        answer.push("A");
+        break;
+      case -1:
+        answer.push("B");
+        break;
+      case 2:
+        answer.push("B");
+        break;
+      case 0:
+        answer.push("D");
+        break;
+    }
+  }
+  return answer;
+}
