@@ -9,18 +9,14 @@ function solution(userA, userB) {
   for (let i = 0; i < userA.length; i++) {
     if (userA[i] === userB[i]) {
       answer.push("D");
-    } else if (userA[i] === 1 && userB[i] === 2) {
-      answer.push("B");
     } else if (userA[i] === 1 && userB[i] === 3) {
       answer.push("A");
     } else if (userA[i] === 2 && userB[i] === 1) {
       answer.push("A");
-    } else if (userA[i] === 2 && userB[i] === 3) {
-      answer.push("B");
-    } else if (userA[i] === 3 && userB[i] === 1) {
-      answer.push("B");
     } else if (userA[i] === 3 && userB[i] === 2) {
       answer.push("A");
+    } else {
+      answer.push("B");
     }
   }
   return answer;
