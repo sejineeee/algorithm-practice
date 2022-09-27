@@ -98,3 +98,30 @@ const arr = [
 ];
 
 console.log(solution(arr));
+
+// 풀이 방법
+function otherSolution(arr) {
+  let answer = 0;
+  let n = arr.length;
+  let dx = [-1, 0, 1, 0];
+  let dy = [0, 1, 0, -1];
+  for (let i = 0; i < n; i++) {
+    for (let j = 0; j < n; j++) {
+      let flag = 1;
+      for (let k = 0; k < 4; k++) {
+        let nx = i + dx[k]; // 방향 탐색하는 행 좌표
+        let ny = j + dy[k]; // 방향 탐색하는 열 좌표
+        if (nx >= 0 && nx < n && ny >= 0 && ny < n && arr[nx][ny] > arr[i][j]) {
+          flag = 0;
+          break; // 봉우리가 아니기 때문에 flag를 0으로 초기화 해준다.
+        }
+      }
+      if (flag) {
+        answer++;
+      }
+    }
+  }
+  return answer;
+}
+
+console.log(otherSolution(arr));
