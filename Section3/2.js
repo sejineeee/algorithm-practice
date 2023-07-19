@@ -6,12 +6,17 @@
 
 function solution(str) {
   let answer = "";
-  const splitStr = [...str.split("")];
-  const reversedSplit = splitStr.reverse();
-  if (splitStr === reversedSplit) {
+
+  const regexp = /[^a-z]/gi;
+
+  const convertStr = str.replace(regexp, "").toLowerCase();
+
+  const reversedStr = convertStr.split("").reverse().join("");
+
+  if (convertStr === reversedStr) {
     return (answer = "YES");
   }
-  answer = "NO";
+  return (answer = "NO");
 }
 
 const str = "found7, time: study; Yduts; emit, 7Dnuof";
