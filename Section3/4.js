@@ -5,20 +5,31 @@
 
 function getMinDistance(s, t) {
   let answer = 0;
-  let arr = [];
+  let answerArr = [];
 
-  for (let x of s) {
-    if (x === t) {
+  for (let i = 0; i < s.length; i++) {
+    let distance = null;
+
+    if (s[i] === t) {
       answer = 0;
-      arr.push(answer);
+      answerArr.push(answer);
+      continue;
     } else {
-      answer += 1;
-      arr.push(answer);
+      for (let j = 0; j < s.length; j++) {
+        if (s[j] === t) {
+          if (!distance) {
+            distance = Math.abs(j - i);
+          } else {
+            distance = Math.min(distance, Math.abs(j - i));
+          }
+        }
+      }
     }
+    answerArr.push(distance);
   }
-  return arr;
+  return answerArr;
 }
 
 const str = "teachermode";
 
-getMinDistance(str, "e");
+console.log(getMinDistance(str, "e"));
