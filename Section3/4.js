@@ -33,3 +33,5 @@ function getMinDistance(s, t) {
 const str = "teachermode";
 
 console.log(getMinDistance(str, "e"));
+
+module.exports = getMinDistance;
