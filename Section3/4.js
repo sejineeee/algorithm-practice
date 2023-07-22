@@ -8,7 +8,7 @@ function getMinDistance(s, t) {
   let answerArr = [];
 
   for (let i = 0; i < s.length; i++) {
-    let distance = null;
+    let distance = 0;
 
     if (s[i] === t) {
       answer = 0;
