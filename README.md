@@ -39,3 +39,4 @@
 - [유효한 팰린드롬](https://github.com/sejineeee/algorithm-practice/blob/main/Section3/2.js)
 - [숫자만 추출](https://github.com/sejineeee/algorithm-practice/blob/main/Section3/3.js)
 - [가장 짧은 문자거리](https://github.com/sejineeee/algorithm-practice/blob/main/Section3/4.js)
+- [문자열 압축](https://github.com/sejineeee/algorithm-practice/blob/main/Section3/5.js)
