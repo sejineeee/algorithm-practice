@@ -26,3 +26,5 @@ function compressString(string) {
 const str = "KKHSSSSSSSE";
 
 console.log(compressString(str));
+
+module.exports = compressString;
