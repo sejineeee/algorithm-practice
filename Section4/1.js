@@ -7,6 +7,10 @@ function plusOfDigit(...numbers) {
   let compareNum = 0;
   let result = 0;
 
+  if (!numbers.length) {
+    throw new Error("값을 전달해주세요");
+  }
+
   for (let i = 0; i < numbers.length; i++) {
     let strToNum = numbers[i].toString();
     let answer = 0;
@@ -28,3 +32,5 @@ function plusOfDigit(...numbers) {
 }
 
 plusOfDigit(128, 460, 603, 40, 521, 137, 123);
+
+module.exports = plusOfDigit;
