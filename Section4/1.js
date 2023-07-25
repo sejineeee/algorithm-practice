@@ -12,6 +12,10 @@ function plusOfDigit(...numbers) {
   }
 
   for (let i = 0; i < numbers.length; i++) {
+    if (numbers[i] < 0) {
+      throw new Error("자연수만 전달해주세요");
+    }
+
     let strToNum = numbers[i].toString();
     let answer = 0;
 
