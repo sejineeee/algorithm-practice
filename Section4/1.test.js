@@ -14,4 +14,11 @@ describe("function plusOfDigit", () => {
       plusOfDigit();
     }).toThrow(errorMessage);
   });
+  it("non-natural number is passed, it throws an error message", () => {
+    const errorMessage = "자연수만 전달해주세요";
+
+    expect(() => {
+      plusOfDigit(128, -283, 293, 333);
+    }).toThrow(errorMessage);
+  });
 });
