@@ -52,3 +52,5 @@ const rankList = [
 ];
 
 console.log(getMentoring(rankList));
+
+module.exports = getMentoring;
