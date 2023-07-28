@@ -2,7 +2,7 @@
 
 ## 인프런(자바스크립트 알고리즘 문제풀이 입문(코딩테스트 대비))
 
-### Section1
+### Section1 (기본 문제 풀이)
 
 - [세 수 중 최솟값](https://github.com/sejineeee/algorithm-practice/blob/main/Section1/1.js)
 - [삼각형 판별하기](https://github.com/sejineeee/algorithm-practice/blob/main/Section1/2.js)
@@ -23,7 +23,7 @@
 - [중복 문자 제거](https://github.com/sejineeee/algorithm-practice/blob/main/Section1/16.js)
 - [중복 단어 제거](https://github.com/sejineeee/algorithm-practice/blob/main/Section1/17.js)
 
-### Section2
+### Section2 (1, 2차원 탐색)
 
 - [큰 수 출력하기](https://github.com/sejineeee/algorithm-practice/blob/main/Section2/1.js)
 - [보이는 학생](https://github.com/sejineeee/algorithm-practice/blob/main/Section2/2.js)
@@ -33,10 +33,16 @@
 - [격자판 최대합](https://github.com/sejineeee/algorithm-practice/blob/main/Section2/6.js)
 - [봉우리](https://github.com/sejineeee/algorithm-practice/blob/main/Section2/7.js)
 
-### Section3
+### Section3 (문자열 탐색)
 
 - [회문 문자열](https://github.com/sejineeee/algorithm-practice/blob/main/Section3/1.js)
 - [유효한 팰린드롬](https://github.com/sejineeee/algorithm-practice/blob/main/Section3/2.js)
 - [숫자만 추출](https://github.com/sejineeee/algorithm-practice/blob/main/Section3/3.js)
 - [가장 짧은 문자거리](https://github.com/sejineeee/algorithm-practice/blob/main/Section3/4.js)
 - [문자열 압축](https://github.com/sejineeee/algorithm-practice/blob/main/Section3/5.js)
+
+### Section4 (완전 탐색)
+
+- [자릿수의 합](https://github.com/sejineeee/algorithm-practice/blob/main/Section4/1.js)
+- [뒤집은 소수](https://github.com/sejineeee/algorithm-practice/blob/main/Section4/2.js)
+- [멘토링](https://github.com/sejineeee/algorithm-practice/blob/main/Section4/3.js)
