@@ -9,19 +9,40 @@
 // 3번 학생이 1등, 4번 학생이 2등, 1번 학생이 3등, 2번 학생이 4등을 의미함
 
 function getMentoring(rankDatas) {
-  let totalCase = [];
-  rankDatas.forEach((rankData) => {
-    for (let i = 0; i < rankData.length; i++) {
-      for (let j = 0; j < rankData.length; j++) {
-        if (rankData[i] < rankData[j]) {
-          totalCase.push([i + 1, j + 1]);
+  let n = rankDatas[0].length;
+  let m = rankDatas.length;
+
+  let mentoringCase = [];
+  let answer = 0;
+
+  for (let i = 1; i <= n; i++) {
+    for (let j = 1; j <= n; j++) {
+      let mentoringList = [];
+      if (i === j) {
+        continue;
+      }
+      for (let k = 0; k < m; k++) {
+        let pi = 0;
+        let pj = 0;
+        for (let s = 0; s < n; s++) {
+          if (rankDatas[k][s] === i) {
+            pi = s;
+          }
+          if (rankDatas[k][s] === j) {
+            pj = s;
+          }
+        }
+        if (pi < pj) {
+          mentoringList.push([i, j]);
         }
       }
-      console.log(totalCase);
-      // 시험이 총 3번인데, 모두 멘토가 등수가 앞서는 걸 구하는 로직을 생각해보기
+      if (mentoringList.length === m) {
+        mentoringCase.push(mentoringList[0]);
+      }
     }
-    console.log("-----");
-  });
+  }
+  answer = mentoringCase.length;
+  return answer;
 }
 
 const rankList = [
