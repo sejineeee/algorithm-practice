@@ -36,9 +36,10 @@ describe("function getMentoring", () => {
       [5, 2, 3, 1, 4],
     ];
 
-    const result = getMentoring(rankList);
+    const errorMessage = "중복된 학생이 있으니 확인해주세요";
+
     expect(() => {
       getMentoring(rankList);
-    }).toThrow("중복된 학생이 있으니 확인해주세요");
+    }).toThrow(errorMessage);
   });
 });
