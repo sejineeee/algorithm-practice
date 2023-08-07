@@ -8,12 +8,26 @@
 // 만약 한 줄에 N= 4이고, 테스트 결과가 3 4 1 2로 입력되었다면
 // 3번 학생이 1등, 4번 학생이 2등, 1번 학생이 3등, 2번 학생이 4등을 의미함
 
+function checkDuplicationStudent(students) {
+  for (let i = 0; i < students.length; i++) {
+    let checkList = [];
+    for (let j = 0; j < students[i].length; j++) {
+      if (checkList.includes(students[i][j])) {
+        throw new Error("중복된 학생이 있으니 확인해주세요");
+      } else {
+        checkList.push(students[i][j]);
+      }
+    }
+  }
+}
+
 function getMentoring(rankDatas) {
   let n = rankDatas[0].length;
   let m = rankDatas.length;
 
   let mentoringCase = [];
   let answer = 0;
+  checkDuplicationStudent(rankDatas);
 
   for (let i = 1; i <= n; i++) {
     for (let j = 1; j <= n; j++) {
