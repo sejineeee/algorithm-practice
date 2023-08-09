@@ -56,3 +56,5 @@ let shopList = [
 ];
 
 console.log(getNumberOfGifts(5, 28, shopList));
+
+module.exports = getNumberOfGifts;
