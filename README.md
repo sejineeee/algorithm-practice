@@ -46,3 +46,4 @@
 - [자릿수의 합](https://github.com/sejineeee/algorithm-practice/blob/main/Section4/1.js)
 - [뒤집은 소수](https://github.com/sejineeee/algorithm-practice/blob/main/Section4/2.js)
 - [멘토링](https://github.com/sejineeee/algorithm-practice/blob/main/Section4/3.js)
+- [졸업 선물](https://github.com/sejineeee/algorithm-practice/blob/main/Section4/4.js);
