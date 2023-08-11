@@ -29,3 +29,5 @@ function getNthSumOfCard(numberOfCards, k, cards) {
 const cardList = [13, 15, 34, 23, 45, 65, 33, 11, 26, 42];
 
 console.log(getNthSumOfCard(10, 3, cardList));
+
+module.exports = getNthSumOfCard;
