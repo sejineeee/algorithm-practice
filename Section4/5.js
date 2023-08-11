@@ -26,7 +26,7 @@ function getNthSumOfCard(numberOfCards, k, cards) {
   if (k > sortedResult.length) {
     throw new Error("k번째만큼 경우의 수가 존재하는지 확인해주세요");
   } else {
-    result = sortedResult.slice(k - 1, k);
+    result = sortedResult.slice(k - 1, k)[0];
     console.log(sortedResult);
     return result;
   }
