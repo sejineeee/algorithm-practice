@@ -22,8 +22,14 @@ function getNthSumOfCard(numberOfCards, k, cards) {
   }
 
   let sortedResult = [...resultOfSum].sort((a, b) => b - a);
-  result = sortedResult.slice(k - 1, k);
-  return result;
+
+  if (k > sortedResult.length) {
+    throw new Error("k번째만큼 경우의 수가 존재하는지 확인해주세요");
+  } else {
+    result = sortedResult.slice(k - 1, k);
+    console.log(sortedResult);
+    return result;
+  }
 }
 
 const cardList = [13, 15, 34, 23, 45, 65, 33, 11, 26, 42];
