@@ -47,3 +47,4 @@
 - [뒤집은 소수](https://github.com/sejineeee/algorithm-practice/blob/main/Section4/2.js)
 - [멘토링](https://github.com/sejineeee/algorithm-practice/blob/main/Section4/3.js)
 - [졸업 선물](https://github.com/sejineeee/algorithm-practice/blob/main/Section4/4.js);
+- [K번째 큰 수](https://github.com/sejineeee/algorithm-practice/blob/main/Section4/5.js);
