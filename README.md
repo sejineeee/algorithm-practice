@@ -48,3 +48,7 @@
 - [멘토링](https://github.com/sejineeee/algorithm-practice/blob/main/Section4/3.js)
 - [졸업 선물](https://github.com/sejineeee/algorithm-practice/blob/main/Section4/4.js);
 - [K번째 큰 수](https://github.com/sejineeee/algorithm-practice/blob/main/Section4/5.js);
+
+### Section5 (효율성(투포인터 알고리즘, 슬라이딩 윈도우, 해쉬))
+
+- [두 배열 합치기](https://github.com/sejineeee/algorithm-practice/blob/main/Section5/1.js)
