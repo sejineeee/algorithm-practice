@@ -32,3 +32,5 @@ const arr1 = [1, 3, 9, 5, 2];
 const arr2 = [3, 2, 5, 7, 8];
 
 console.log(getAscendingOfCommon(arr1, arr2));
+
+module.exports = getAscendingOfCommon;
