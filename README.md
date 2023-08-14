@@ -52,3 +52,4 @@
 ### Section5 (효율성(투포인터 알고리즘, 슬라이딩 윈도우, 해쉬))
 
 - [두 배열 합치기](https://github.com/sejineeee/algorithm-practice/blob/main/Section5/1.js)
+- [공통원소 구하기](https://github.com/sejineeee/algorithm-practice/blob/main/Section5/2.js)
