@@ -28,10 +28,12 @@ function getAscendingOrder(firstNum, firstArr, secondNum, secondArr) {
     result.push(secondArr[point2]);
     point2++;
   }
-  console.log(result);
+  return result;
 }
 
 const arr1 = [1, 3, 5];
 const arr2 = [2, 3, 6, 7, 9];
 
 console.log(getAscendingOrder(3, arr1, 5, arr2));
+
+module.exports = getAscendingOrder;
