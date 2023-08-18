@@ -37,3 +37,5 @@ function getContinuePartSeq(n, m, seq) {
 const sequence = [1, 2, 1, 3, 1, 1, 1, 2];
 
 console.log(getContinuePartSeq(8, 6, sequence));
+
+module.exports = getContinuePartSeq;
