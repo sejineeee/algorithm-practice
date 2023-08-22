@@ -15,10 +15,12 @@ function getContinuePartSeq(n, m, seq) {
     sum += seq[point2];
 
     if (sum === M) {
-      result.push(seq.slice(point1, point2));
-    } else if (sum > M) {
-      point1++;
+      result.push(seq.slice(point1, point2 + 1));
+    }
+
+    while (sum > M) {
       sum -= seq[point1];
+      point1++;
       if (sum === M) {
         result.push(seq.slice(point1, point2 + 1));
       }
