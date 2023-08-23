@@ -44,3 +44,5 @@ function getMOrLess(M, seq) {
 const sequence = [1, 3, 1, 2, 3];
 
 console.log(getMOrLess(5, sequence));
+
+module.exports = getMOrLess;
