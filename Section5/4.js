@@ -8,30 +8,15 @@ function getMOrLess(M, seq) {
   const N = seq.length;
   const result = [];
 
-  let sum = 0;
-  let point1 = 0;
-
-  for (let point2 = 0; point2 < N; point2++) {
-    sum += seq[point2];
-    if (seq[point2] <= M) {
-      result.push([seq[point2]]);
-    }
-
-    if (sum <= M) {
-      if (point1 === point2) {
+  for (let point1 = 0; point1 < N; point1++) {
+    let sum = 0;
+    for (let point2 = 0; point2 < N; point2++) {
+      if (point1 > point2) {
         continue;
       }
-      result.push(seq.slice(point1, point2 + 1));
-    }
 
-    if (sum === M) {
-      result.push(seq.slice(point1 + 1, point2 + 1));
-    }
-
-    while (sum > M) {
-      sum -= seq[point1];
-      point1++;
-      if (sum <= M) {
+      sum += seq[point2];
+      if (seq[point2] <= M && sum <= M) {
         result.push(seq.slice(point1, point2 + 1));
       }
     }
