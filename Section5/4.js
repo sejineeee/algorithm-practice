@@ -16,7 +16,7 @@ function getMOrLess(M, seq) {
       }
 
       sum += seq[point2];
-      if (seq[point2] <= M && sum <= M) {
+      if (sum <= M) {
         result.push(seq.slice(point1, point2 + 1));
       }
     }
