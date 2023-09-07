@@ -56,3 +56,5 @@
 - [연속 부분수열 1](https://github.com/sejineeee/algorithm-practice/blob/main/Section5/3.js)
 - [연속 부분수열 2](https://github.com/sejineeee/algorithm-practice/blob/main/Section5/4.js)
 - [최대 매출](https://github.com/sejineeee/algorithm-practice/blob/main/Section5/5.js)
+- [학급 회장(해시)](https://github.com/sejineeee/algorithm-practice/blob/main/Section5/6.js)
+  - [Map 객체 이용](https://github.com/sejineeee/algorithm-practice/blob/main/Section5/6-1.js)
