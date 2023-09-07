@@ -8,12 +8,13 @@ function getVotingResult(N, s) {
   let obj = {};
   let num = null;
   let result = null;
+  let convertStr = s.toUpperCase();
 
   for (let i = 0; i < N; i++) {
-    if (obj[s[i]]) {
-      obj[s[i]]++;
+    if (obj[convertStr[i]]) {
+      obj[convertStr[i]]++;
     } else {
-      obj[s[i]] = 1;
+      obj[convertStr[i]] = 1;
     }
   }
 
@@ -23,9 +24,12 @@ function getVotingResult(N, s) {
       result = candidate;
     }
   }
+
   return result;
 }
 
 let str = "BACBACCACCBDEDE";
 
 console.log(getVotingResult(15, str));
+
+module.exports = getVotingResult;
