@@ -37,3 +37,5 @@ const string3 = "abaCC";
 const string4 = "Caaab";
 
 console.log(checkAnagram(string3, string4));
+
+module.exports = checkAnagram;
