@@ -58,3 +58,5 @@
 - [최대 매출](https://github.com/sejineeee/algorithm-practice/blob/main/Section5/5.js)
 - [학급 회장(해시)](https://github.com/sejineeee/algorithm-practice/blob/main/Section5/6.js)
   - [Map 객체 이용](https://github.com/sejineeee/algorithm-practice/blob/main/Section5/6-1.js)
+- [애너그램(해쉬)](https://github.com/sejineeee/algorithm-practice/blob/main/Section5/7.js)
+- [모든 애너그램 찾기](https://github.com/sejineeee/algorithm-practice/blob/main/Section5/8.js)
