@@ -70,3 +70,5 @@ const string1 = "bacaAacba";
 const string2 = "abc";
 
 console.log(checkAllAnagram(string1, string2));
+
+module.exports = checkAllAnagram;
