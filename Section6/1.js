@@ -26,3 +26,5 @@ function findParentheses(p) {
 const parentheses = "(()(()))(()";
 
 console.log(findParentheses(parentheses));
+
+module.exports = findParentheses;
