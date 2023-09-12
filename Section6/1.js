@@ -10,17 +10,20 @@ function findParentheses(p) {
     if (p[i] === "(") {
       stack.push(p[i]);
     } else if (p[i] === ")") {
-      stack.pop();
+      let popValue = stack.pop();
+      if (!popValue) {
+        return (result = "NO");
+      }
+    } else {
+      throw new Error("괄호가 아닌 문자열이 포함되어 있습니다");
     }
   }
 
   if (stack.length === 0) {
-    result = "YES";
+    return (result = "YES");
   } else {
-    result = "NO";
+    return (result = "NO");
   }
-
-  return result;
 }
 
 const parentheses = "(()(()))(()";
