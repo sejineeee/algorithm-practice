@@ -24,3 +24,5 @@ function removeStr(s) {
 const str = "(A(BC)D)EF(G(H)(IJ)K)LM(N)";
 
 console.log(removeStr(str));
+
+module.exports = removeStr;
