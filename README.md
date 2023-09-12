@@ -60,3 +60,8 @@
   - [Map 객체 이용](https://github.com/sejineeee/algorithm-practice/blob/main/Section5/6-1.js)
 - [애너그램(해쉬)](https://github.com/sejineeee/algorithm-practice/blob/main/Section5/7.js)
 - [모든 애너그램 찾기](https://github.com/sejineeee/algorithm-practice/blob/main/Section5/8.js)
+
+### Section6(자료구조(스택, 큐))
+
+- [올바른 괄호](https://github.com/sejineeee/algorithm-practice/blob/main/Section6/1.js)
+- [괄호 문자 제거](https://github.com/sejineeee/algorithm-practice/blob/main/Section6/2.js)
