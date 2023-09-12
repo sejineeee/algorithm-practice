@@ -18,7 +18,9 @@ function removeStr(s) {
     }
   }
 
-  return resultString.join("");
+  return resultString.length === 0
+    ? console.log("남은 문자가 없습니다")
+    : resultString.join("");
 }
 
 const str = "(A(BC)D)EF(G(H)(IJ)K)LM(N)";
