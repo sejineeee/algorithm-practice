@@ -54,3 +54,5 @@ const board = [
 const moves = [1, 5, 3, 5, 1, 2, 1, 4];
 
 console.log(solution(board, moves));
+
+module.exports = solution;
