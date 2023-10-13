@@ -36,3 +36,5 @@ function calculate(expr) {
 const str = "352+*9-";
 
 console.log(calculate(str));
+
+module.exports = calculate;
