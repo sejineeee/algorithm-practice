@@ -5,10 +5,14 @@
 // 레이저는 어떤 쇠막대기의 양 끝점과도 겹치지 않음
 
 function getCutStickAmount(parenthesesString) {
-  const parenthesisArray = parenthesesString.split('');
-  const stack = [];
+  if (parenthesesString === '') {
+    throw new Error('데이터를 확인해주시길 바랍니다');
+  }
 
+  const stack = [];
   let amount = 0;
+
+  const parenthesisArray = parenthesesString.split('');
 
   parenthesisArray.forEach((parentheses, index, array) => {
     if (parentheses === '(') {
@@ -31,3 +35,5 @@ function getCutStickAmount(parenthesesString) {
 
 const data = '(((()(()()))(())()))(()())';
 console.log(getCutStickAmount(data));
+
+module.exports = getCutStickAmount;
