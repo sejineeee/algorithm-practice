@@ -37,3 +37,5 @@ const PRINCES = 8;
 const K = 3;
 
 console.log(getPrinceToRescuePrincess(PRINCES, K));
+
+module.exports = getPrinceToRescuePrincess;
