@@ -32,3 +32,5 @@ const designedSubjectsString = 'CBDAGE';
 console.log(
   checkDesignedSubjects(requiredSubjectsString, designedSubjectsString)
 );
+
+module.exports = checkDesignedSubjects;
