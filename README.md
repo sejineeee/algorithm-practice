@@ -69,3 +69,4 @@
 - [후위식 연산(postfix)](https://github.com/sejineeee/algorithm-practice/blob/main/Section6/4.js)
 - [쇠막대기](https://github.com/sejineeee/algorithm-practice/blob/main/Section6/5.js)
 - [공주 구하기](https://github.com/sejineeee/algorithm-practice/blob/main/Section6/6.js)
+- [교육 과정 설계](https://github.com/sejineeee/algorithm-practice/blob/main/Section6/7.js)
