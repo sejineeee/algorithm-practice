@@ -4,6 +4,9 @@
 // 수업설계가 잘된 것 -> "YES", 잘못된 것 -> "NO" 출력
 
 function checkDesignedSubjects(required, designed) {
+  if (designed.length > 30) {
+    throw new Error('수업설계의 길이는 30자 이하여야 됩니다');
+  }
   const requiredSubjects = required.split('');
   const designedSubjects = designed.split('');
 
