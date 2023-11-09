@@ -70,3 +70,8 @@
 - [쇠막대기](https://github.com/sejineeee/algorithm-practice/blob/main/Section6/5.js)
 - [공주 구하기](https://github.com/sejineeee/algorithm-practice/blob/main/Section6/6.js)
 - [교육 과정 설계](https://github.com/sejineeee/algorithm-practice/blob/main/Section6/7.js)
+
+### Section7(정렬과 그리디, 결정 알고리즘)
+
+- [선택 정렬](https://github.com/sejineeee/algorithm-practice/blob/main/Section7/1.js)
+- [버블 정렬](https://github.com/sejineeee/algorithm-practice/blob/main/Section7/2.js)
