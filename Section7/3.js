@@ -6,18 +6,27 @@
 
 function specialSort(arr) {
   let count = 0;
+  const list = [...arr];
 
-  while (count < arr.length) {
-    for (let i = 0; i < arr.length; i++) {
-      if (arr[i] > arr[i + 1] && arr[i] > 0) {
-        [arr[i], arr[i + 1]] = [arr[i + 1], arr[i]];
+  while (count < list.length) {
+    list.forEach((item, index, arr) => {
+      if (item === 0) {
+        throw new Error('숫자 0을 제외하고 입력해주세요.');
       }
-    }
+
+      if (item > 0 && arr[index + 1] < 0) {
+        [list[index], list[index + 1]] = [list[index + 1], list[index]];
+      }
+    });
+
     count += 1;
   }
-  return arr;
+
+  return list;
 }
 
 const list = [1, 2, 3, -3, -2, 5, 6, -6];
 
 console.log(specialSort(list));
+
+module.exports = specialSort;
