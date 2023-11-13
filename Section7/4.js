@@ -10,8 +10,8 @@ function insertionSort(arr) {
 
     for(let j = i - 1; j >= 0; j--) {
       if(currentValue < list[j]) {
-        list[j + 1] = list[j]
-        list[j] = currentValue
+        list[j + 1] = list[j];
+        list[j] = currentValue;
       } 
     }
   }
@@ -22,3 +22,5 @@ function insertionSort(arr) {
 const list = [11, 7, 5, 6, 10, 9];
 
 console.log(insertionSort(list));
+
+module.exports = insertionSort;
