@@ -5,12 +5,14 @@
 function insertionSort(arr) {
   const list = [...arr];
 
-
   for(let i = 0; i < list.length; i++) {
-    for(let j = 0; j < i; j++) {
-      if(list[i] < list[j]) {
-        [list[i], list[j]] = [list[j], list[i]]
-      }
+    let currentValue = list[i];
+
+    for(let j = i - 1; j >= 0; j--) {
+      if(currentValue < list[j]) {
+        list[j + 1] = list[j]
+        list[j] = currentValue
+      } 
     }
   }
 
