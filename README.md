@@ -76,3 +76,5 @@
 - [선택 정렬](https://github.com/sejineeee/algorithm-practice/blob/main/Section7/1.js)
 - [버블 정렬](https://github.com/sejineeee/algorithm-practice/blob/main/Section7/2.js)
 - [Special Sort(구글 인터뷰)](https://github.com/sejineeee/algorithm-practice/blob/main/Section7/3.js)
+- [삽입 정렬](https://github.com/sejineeee/algorithm-practice/blob/main/Section7/4.js)
+- [Least Recently Used(카카오 캐시 문제 변형)](https://github.com/sejineeee/algorithm-practice/blob/main/Section7/5.js)
