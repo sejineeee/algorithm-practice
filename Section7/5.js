@@ -13,7 +13,7 @@ function sortLRU(size, listOfWork) {
 
   listOfWork.forEach((item) => {
     let index = cache.indexOf(item);
-    
+
     if(index === -1) {
       for(let i = size - 1; i >= 1; i--) {
         cache[i] = cache[i - 1];
@@ -32,3 +32,23 @@ function sortLRU(size, listOfWork) {
 const list = [1, 2, 3, 2, 6, 2, 3, 5, 7];
 
 console.log(sortLRU(5, list))
+
+function sortLRUWithBuiltinMethod(size, listOfWork) {
+  const cache = Array(size);
+
+  listOfWork.forEach((item) => {
+    let index = cache.indexOf(item);
+
+    if(index === -1) {
+      cache.unshift(item);
+      cache.pop();
+    } else {
+      cache.splice(index, 1);
+      cache.unshift(item);
+    }
+  })
+
+  return cache;
+}
+
+console.log(sortLRUWithBuiltinMethod(5, list))
