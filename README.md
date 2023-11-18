@@ -78,3 +78,5 @@
 - [Special Sort(구글 인터뷰)](https://github.com/sejineeee/algorithm-practice/blob/main/Section7/3.js)
 - [삽입 정렬](https://github.com/sejineeee/algorithm-practice/blob/main/Section7/4.js)
 - [Least Recently Used(카카오 캐시 문제 변형)](https://github.com/sejineeee/algorithm-practice/blob/main/Section7/5.js)
+- [장난꾸러기 현수(순서 정렬)](https://github.com/sejineeee/algorithm-practice/blob/main/Section7/6.js)
+- [좌표 정렬](https://github.com/sejineeee/algorithm-practice/blob/main/Section7/7.js)
