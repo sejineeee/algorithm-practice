@@ -81,3 +81,4 @@
 - [장난꾸러기 현수(순서 정렬)](https://github.com/sejineeee/algorithm-practice/blob/main/Section7/6.js)
 - [좌표 정렬](https://github.com/sejineeee/algorithm-practice/blob/main/Section7/7.js)
 - [회의실 배정](https://github.com/sejineeee/algorithm-practice/blob/main/Section7/8.js)
+- [결혼식](https://github.com/sejineeee/algorithm-practice/blob/main/Section7/9.js)
