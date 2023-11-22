@@ -8,6 +8,13 @@
 function binarySearch(arr, m) {
   const sortedList = arr.sort((a, b) => a - b);
 
+  for(let i = 0; i < arr.length; i++) {
+    if(sortedList[i] === sortedList[i - 1]) {
+      console.log(sortedList[i], sortedList[i - 1])
+      throw new Error('[ERROR] 중복된 값이 존재합니다.');
+    }
+  }
+
   let left = 0;
   let right = arr.length - 1;
   
