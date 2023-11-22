@@ -32,3 +32,5 @@ const list = [23, 87, 65, 12, 57, 32, 99, 81];
 const M = 32;
 
 console.log(binarySearch(list, M));
+
+module.exports = binarySearch;
