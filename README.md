@@ -83,3 +83,4 @@
 - [회의실 배정](https://github.com/sejineeee/algorithm-practice/blob/main/Section7/8.js)
 - [결혼식](https://github.com/sejineeee/algorithm-practice/blob/main/Section7/9.js)
 - [이분검색](https://github.com/sejineeee/algorithm-practice/blob/main/Section7/10.js)
+- [뮤직비디오(이분탐색)](https://github.com/sejineeee/algorithm-practice/blob/main/Section7/11.js)
