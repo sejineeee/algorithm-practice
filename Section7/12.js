@@ -39,3 +39,5 @@ const horseCoordinateList = [1, 2, 8, 4, 9];
 const totalHorseNumber= 3;
 
 console.log(getMaxDistance(horseCoordinateList, totalHorseNumber))
+
+module.exports = getMaxDistance;
