@@ -84,3 +84,8 @@
 - [결혼식](https://github.com/sejineeee/algorithm-practice/blob/main/Section7/9.js)
 - [이분검색](https://github.com/sejineeee/algorithm-practice/blob/main/Section7/10.js)
 - [뮤직비디오(이분탐색)](https://github.com/sejineeee/algorithm-practice/blob/main/Section7/11.js)
+
+### Section8(재귀함수와 완전탐색(깊이우선탐색, DFS))
+
+- [재귀함수](https://github.com/sejineeee/algorithm-practice/blob/main/Section8/1.js)
+- [재귀함수를 이용한 이진수 출력](https://github.com/sejineeee/algorithm-practice/blob/main/Section8/2.js)
