@@ -90,3 +90,5 @@
 - [재귀함수](https://github.com/sejineeee/algorithm-practice/blob/main/Section8/1.js)
 - [재귀함수를 이용한 이진수 출력](https://github.com/sejineeee/algorithm-practice/blob/main/Section8/2.js)
 - [이진트리 순회(전위, 중위, 후위)](https://github.com/sejineeee/algorithm-practice/blob/main/Section8/3.js)
+- [부분집합 구하기(DFS)](https://github.com/sejineeee/algorithm-practice/blob/main/Section8/4.js)
+
