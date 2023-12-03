@@ -22,7 +22,7 @@ function getEqualSumSubsetNumber(list) {
       if(totalSum - sum === sum) {
         result = "YES";
         flag = 1;
-        
+
         for(let i = 0; i < list.length; i++) {
           if(arr[i] === 1) {
             subsetList[0].push(list[i]);            
@@ -49,4 +49,4 @@ const list = [1, 3, 5, 6, 7, 10];
 
 console.log(getEqualSumSubsetNumber(list))
 
-
+module.exports = getEqualSumSubsetNumber;
