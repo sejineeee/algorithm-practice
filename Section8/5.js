@@ -30,6 +30,8 @@ function getEqualSumSubsetNumber(list) {
             subsetList[1].push(list[i]);
           }
         }
+      } else {
+        result = "NO";
       }
     } else {
       arr[index] = 1;
