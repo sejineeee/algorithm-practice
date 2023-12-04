@@ -7,10 +7,10 @@
 function getMaxWeight(C, list) {
   const arr = Array.from({ length: list.length }, () => 0);
   let result = 0;
-  let resultArray;
+  let resultArray = [];
   const recursiveFunc = (index, sum) => {
     if(sum > C) {
-      return;
+      return 0;
     }
 
     if(index === list.length) {
