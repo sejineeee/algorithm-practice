@@ -43,3 +43,5 @@ function getMaxWeight(C, list) {
 const weightList = [81, 58, 42, 33, 61];
 
 console.log(getMaxWeight(259, weightList));
+
+module.exports = getMaxWeight;
