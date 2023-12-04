@@ -19,7 +19,7 @@ describe('function getMaxWeight', () => {
     const list = [50];
     const result = getMaxWeight(30, list);
 
-    expect(logSpy).toHaveBeenCalledWith();
+    expect(logSpy).toHaveBeenCalledWith([]);
     expect(result).toBe(0);
 
     logSpy.mockRestore();
