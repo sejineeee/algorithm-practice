@@ -93,3 +93,4 @@
 - [부분집합 구하기(DFS)](https://github.com/sejineeee/algorithm-practice/blob/main/Section8/4.js)
 - [합이 같은 부분집합(DFS: 아마존 인터뷰)](https://github.com/sejineeee/algorithm-practice/blob/main/Section8/5.js)
 - [바둑이 승차(DFS)](https://github.com/sejineeee/algorithm-practice/blob/main/Section8/6.js)
+- [최대점수 구하기(DFS)](https://github.com/sejineeee/algorithm-practice/blob/main/Section8/7.js)
