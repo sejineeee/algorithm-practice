@@ -9,34 +9,29 @@ function getMaxScore(timeLimit, scoreList, requiredTimeList) {
   let result = 0;
   let resultList = [];
 
-  const recursiveFunc = (index, sum) => {
+  const recursiveFunc = (index, sum, currentList) => {
     if(timeLimit < sum) {
       return 0;
     }
 
     if(index === N) {
-      resultList = [];
-      for(let i = 0; i < index; i++) {
-        if(arr[i] === 1) {
-          resultList.push(scoreList[i]);
-        }
-      }
-
-      let value = resultList.reduce((a, b) => a + b, 0);
+      const value = currentList.reduce((a, b) => a + b, 0);
 
       if(result < value) {
         result = value;
+        resultList = [...currentList];
       }
     } else {
       arr[index] = 1;
-      recursiveFunc(index + 1, sum + requiredTimeList[index]);
+      recursiveFunc(index + 1, sum + requiredTimeList[index], [...currentList, scoreList[index]]);
       arr[index] = 0;
-      recursiveFunc(index + 1, sum);
+      recursiveFunc(index + 1, sum, currentList);
     }
   };
 
-  recursiveFunc(0, 0);
+  recursiveFunc(0, 0, []);
 
+  console.log(resultList);
   return result;
 }
 
