@@ -39,4 +39,4 @@ const time = 20;
 const questionScores = [10, 25, 15, 6, 7];
 const questionRequiredTime = [5, 12, 8, 3, 4];
 
-console.log(getMaxScore(time, questionScores, questionRequiredTime))
+console.log(getMaxScore(time, questionScores, questionRequiredTime));
