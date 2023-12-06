@@ -26,3 +26,5 @@ function getDuplicationPermutation(number, count) {
 }
 
 getDuplicationPermutation(3, 2);
+
+module.exports = getDuplicationPermutation;
