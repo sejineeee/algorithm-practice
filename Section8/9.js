@@ -13,6 +13,7 @@ function getMinCoins(typeOfCoins, changeMoney) {
     if(sum === changeMoney) {
       result = Math.min(result, arr.length);
       resultArr = [...arr];
+      return;
     } else {
       for(let i = 0; i < typeOfCoins.length; i++) {
         recursiveFunc(level + 1, sum + typeOfCoins[i], [...arr, typeOfCoins[i]]);
