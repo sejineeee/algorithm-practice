@@ -29,3 +29,5 @@ function getMinCoins(typeOfCoins, changeMoney) {
 const coins = [1, 2, 5];
 
 console.log(getMinCoins(coins, 15));
+
+module.exports = getMinCoins;
