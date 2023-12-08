@@ -33,3 +33,5 @@ function getPermutation(numberList, count) {
 const list = [3, 6, 9];
 
 console.log(getPermutation(list, 2));
+
+module.exports = getPermutation;
