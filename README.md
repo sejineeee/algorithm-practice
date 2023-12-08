@@ -96,3 +96,4 @@
 - [최대점수 구하기(DFS)](https://github.com/sejineeee/algorithm-practice/blob/main/Section8/7.js)
 - [중복순열 구하기](https://github.com/sejineeee/algorithm-practice/blob/main/Section8/8.js)
 - [동전교환](https://github.com/sejineeee/algorithm-practice/blob/main/Section8/9.js)
+- [순열 구하기](https://github.com/sejineeee/algorithm-practice/blob/main/Section8/10.js)
