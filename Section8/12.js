@@ -5,17 +5,28 @@
 // 재귀를 이용해 조합수를 구해주는 프로그램 만들기
 
 function getCombination(n, r) {
+  const memory = new Map();
+
   const combination = (n, r) => {
+    const key = `${n}:${r}`;
+
+    if (memory.has(key)) {
+      return memory.get(key);
+    }
     if (n === r || r === 0) {
       return 1;
     } else {
-      return combination(n - 1, r - 1) + combination(n - 1, r);
+      const value = combination(n - 1, r - 1) + combination(n - 1, r);
+
+      memory.set(key, value);
+
+      return value;
     }
   };
 
-  const result = combination(n, r);
+  const ressult = combination(n, r);
 
-  return result;
+  return ressult;
 }
 
-console.log(getCombination(5, 3));
+console.log(getCombination(33, 19));
