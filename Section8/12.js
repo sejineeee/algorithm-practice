@@ -30,3 +30,5 @@ function getCombination(n, r) {
 }
 
 console.log(getCombination(33, 19));
+
+module.exports = getCombination;
