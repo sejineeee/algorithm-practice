@@ -64,3 +64,5 @@ function guessSequence(N, totalSum) {
 }
 
 console.log(guessSequence(4, 16));
+
+module.exports = guessSequence;
