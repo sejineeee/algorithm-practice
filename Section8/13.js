@@ -12,7 +12,6 @@ function guessSequence(N, totalSum) {
   const visitedArr = Array(N).fill(0);
 
   let result;
-  let flag = 0;
 
   const combination = (n, r) => {
     const key = `${n}:${r}`;
@@ -33,13 +32,13 @@ function guessSequence(N, totalSum) {
   };
 
   const recursiveFunc = (level, sum) => {
-    if (flag) {
+    if (result) {
       return;
     }
 
     if (level === N && sum === totalSum) {
       result = [...numberArr];
-      flag = 1;
+      return;
     } else {
       for (let i = 1; i <= N; i++) {
         if (!visitedArr[i]) {
