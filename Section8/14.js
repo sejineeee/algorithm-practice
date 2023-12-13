@@ -4,24 +4,27 @@
 // N(3<=N<=10), M(2<=M<=N)
 
 function getCombination(number, count) {
-  const visitedArr = Array(count).fill(0);
-  const resultList = [];
+  const result = [];
 
-  const recursiveFunc = (level, receiveNum) => {
-    if (level === count) {
-      resultList.push([...visitedArr]);
+  const recursiveFunc = (current, start) => {
+    if (current.length === count) {
+      result.push([...current]);
       return;
     } else {
-      for (let i = receiveNum; i <= number; i++) {
-        visitedArr[level] = i;
-        recursiveFunc(level + 1, i + 1);
+      for (let i = start; i <= number; i++) {
+        current.push(i);
+        recursiveFunc([...current], i + 1);
+        current.pop();
       }
     }
   };
 
-  recursiveFunc(0, 1);
-  console.log(resultList);
-  console.log(resultList.length);
+  recursiveFunc([], 1);
+
+  return result;
 }
 
-getCombination(4, 2);
+const result = getCombination(4, 2);
+
+console.log(result);
+console.log(result.length);
