@@ -100,3 +100,4 @@
 - [팩토리얼](https://github.com/sejineeee/algorithm-practice/blob/main/Section8/11.js)
 - [조합의 경우수(메모이제이션)](https://github.com/sejineeee/algorithm-practice/blob/main/Section8/12.js)
 - [수열 추측하기](https://github.com/sejineeee/algorithm-practice/blob/main/Section8/13.js)
+- [조합 구하기](https://github.com/sejineeee/algorithm-practice/blob/main/Section8/14.js)
