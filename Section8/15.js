@@ -27,3 +27,5 @@ const inputList = [2, 4, 5, 8, 12];
 const result = getMultipleCombination(inputList, 3, 6);
 
 console.log(result.length);
+
+module.exports = getMultipleCombination;
