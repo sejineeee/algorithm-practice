@@ -12,7 +12,7 @@ function getMultipleCombination(list, count, multipleNumber) {
     } else {
       for (let i = start; i < list.length; i++) {
         current.push(list[i]);
-        generateCombination([...current], i + 1, sum + list[i]);
+        generateCombination(current, i + 1, sum + list[i]);
         current.pop();
       }
     }
@@ -23,7 +23,7 @@ function getMultipleCombination(list, count, multipleNumber) {
   return result;
 }
 
-const list = [2, 4, 5, 8, 12];
-const result = getMultipleCombination(list, 3, 6);
+const inputList = [2, 4, 5, 8, 12];
+const result = getMultipleCombination(inputList, 3, 6);
 
 console.log(result.length);
