@@ -102,3 +102,7 @@
 - [수열 추측하기](https://github.com/sejineeee/algorithm-practice/blob/main/Section8/13.js)
 - [조합 구하기](https://github.com/sejineeee/algorithm-practice/blob/main/Section8/14.js)
 - [수들의 조합](https://github.com/sejineeee/algorithm-practice/blob/main/Section8/15.js)
+
+### Section9(그래프와 탐색(DFS, BFS(넓이우선)))
+
+- [경로 탐색(인접리스트)](https://github.com/sejineeee/algorithm-practice/blob/main/Section9/1.js)
