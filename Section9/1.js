@@ -52,3 +52,5 @@ const inputList = [
   [4, 5],
 ];
 console.log(getAmountOfCourse(N, inputList));
+
+module.exports = getAmountOfCourse;
