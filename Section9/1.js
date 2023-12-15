@@ -5,9 +5,9 @@ function getAmountOfCourse(number, list) {
   let result = 0;
   const resultedList = [];
 
-  const graph = Array(number + 1)
-    .fill(0)
-    .map(() => Array(number + 1).fill(0));
+  const graph = Array.from({ length: number + 1 }, () =>
+    Array(number + 1).fill(0)
+  );
   const visitedCheckList = Array(number + 1).fill(0);
 
   for (const [a, b] of list) {
@@ -16,7 +16,8 @@ function getAmountOfCourse(number, list) {
   const recursiveFunc = (vertex, path) => {
     if (vertex === number) {
       resultedList.push([...path]);
-      return result++;
+      result += 1;
+      return;
     } else {
       visitedCheckList[1] = 1;
 
