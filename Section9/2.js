@@ -14,7 +14,7 @@ function getAmountOfCourse(number, list) {
     graph[a].push(b);
   }
 
-  const recursiveFunc = (vertex, path) => {
+  const generatePath = (vertex, path) => {
     if (vertex === number) {
       result += 1;
       resultedList.push([...path]);
@@ -25,7 +25,7 @@ function getAmountOfCourse(number, list) {
         if (visitedCheckList[graph[vertex][i]] === 0) {
           visitedCheckList[graph[vertex][i]] = 1;
           path.push(graph[vertex][i]);
-          recursiveFunc(graph[vertex][i], path);
+          generatePath(graph[vertex][i], path);
           visitedCheckList[graph[vertex][i]] = 0;
           path.pop();
         }
@@ -33,7 +33,7 @@ function getAmountOfCourse(number, list) {
     }
   };
 
-  recursiveFunc(1, [1]);
+  generatePath(1, [1]);
 
   console.log(resultedList);
   return result;
