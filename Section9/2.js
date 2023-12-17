@@ -8,7 +8,7 @@ function getAmountOfCourse(number, list) {
   const resultedList = [];
 
   const graph = Array.from({ length: number + 1 }, () => Array());
-  const visitedCheckList = Array(number + 1).fill(0);
+  const visitedCheckSet = new Set();
 
   for (const [a, b] of list) {
     graph[a].push(b);
@@ -19,17 +19,15 @@ function getAmountOfCourse(number, list) {
       result += 1;
       resultedList.push([...path]);
     } else {
-      visitedCheckList[1] = 1;
+      visitedCheckSet.add(vertex);
 
       for (let i = 0; i < graph[vertex].length; i++) {
-        if (visitedCheckList[graph[vertex][i]] === 0) {
-          visitedCheckList[graph[vertex][i]] = 1;
-          path.push(graph[vertex][i]);
-          generatePath(graph[vertex][i], path);
-          visitedCheckList[graph[vertex][i]] = 0;
-          path.pop();
+        if (!visitedCheckSet.has(graph[vertex][i])) {
+          generatePath(graph[vertex][i], [...path, graph[vertex][i]]);
         }
       }
+
+      visitedCheckSet.delete(vertex);
     }
   };
 
