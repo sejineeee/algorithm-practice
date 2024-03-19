@@ -36,4 +36,6 @@ function getMinJumpingCount(s, e) {
 
 console.log(getMinJumpingCount(5, 14));
 
+module.exports = getMinJumpingCount;
+
 // 레벨 탐색이면서 최단거리를 구하는 방법에서 BFS를 사용한다.
