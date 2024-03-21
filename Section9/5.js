@@ -7,36 +7,40 @@ function getCountOfIsland(gridList) {
   const dx = [-1, -1, 0, 1, 1, 1, 0, -1];
   const dy = [0, 1, 1, 1, 0, -1, -1, -1];
 
-  const queue = [];
-
   let result = 0;
+
+  function findIsland(x, y) {
+    const queue = [];
+
+    if (gridList[x][y] === 1) {
+      gridList[x][y] = 0;
+      queue.push([x, y]);
+
+      while (queue.length) {
+        let [cx, cy] = queue.shift();
+        for (let k = 0; k < dx.length; k++) {
+          const nx = cx + dx[k];
+          const ny = cy + dy[k];
+          if (
+            nx >= 0 &&
+            nx < N &&
+            ny >= 0 &&
+            ny < N &&
+            gridList[nx][ny] === 1
+          ) {
+            gridList[nx][ny] = 0;
+            queue.push([nx, ny]);
+          }
+        }
+      }
+
+      result += 1;
+    }
+  }
 
   for (let i = 0; i < N; i++) {
     for (let j = 0; j < N; j++) {
-      if (gridList[i][j] === 1) {
-        gridList[i][j] = 0;
-        queue.push([i, j]);
-
-        while (queue.length) {
-          let [cx, cy] = queue.shift();
-          for (let k = 0; k < dx.length; k++) {
-            const nx = cx + dx[k];
-            const ny = cy + dy[k];
-            if (
-              nx >= 0 &&
-              nx < N &&
-              ny >= 0 &&
-              ny < N &&
-              gridList[nx][ny] === 1
-            ) {
-              gridList[nx][ny] = 0;
-              queue.push([nx, ny]);
-            }
-          }
-        }
-
-        result += 1;
-      }
+      findIsland(i, j);
     }
   }
   return result;
