@@ -107,3 +107,6 @@
 
 - [경로 탐색(인접행렬)](https://github.com/sejineeee/algorithm-practice/blob/main/Section9/1.js)
 - [경로 탐색(인접리스트)](https://github.com/sejineeee/algorithm-practice/blob/main/Section9/2.js)
+- [미로탐색(DFS)](https://github.com/sejineeee/algorithm-practice/blob/main/Section9/3.js)
+- [송아지 찾기(BFS)](https://github.com/sejineeee/algorithm-practice/blob/main/Section9/4.js)
+- [섬나라 아일랜드(DFS)](https://github.com/sejineeee/algorithm-practice/blob/main/Section9/5.js)
