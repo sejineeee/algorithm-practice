@@ -111,3 +111,7 @@
 - [송아지 찾기(BFS)](https://github.com/sejineeee/algorithm-practice/blob/main/Section9/4.js)
 - [섬나라 아일랜드(BFS)](https://github.com/sejineeee/algorithm-practice/blob/main/Section9/5.js)
 - [섬나라 아일랜드(DFS)](https://github.com/sejineeee/algorithm-practice/blob/main/Section9/6.js)
+
+### Section9(Dynamic programming(동적계획법))
+
+- [계단오르기](https://github.com/sejineeee/algorithm-practice/blob/main/Section10/1.js)
