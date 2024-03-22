@@ -3,16 +3,16 @@
 // 건널 때 한 번에 한 칸 또는 두 칸씩 건널 수 있음
 
 function getNumberOfCases(numberOfStone) {
-  const dynamicList = new Array(numberOfStone + 1).fill(0);
+  const dynamicList = new Array(numberOfStone + 2).fill(0);
 
   dynamicList[1] = 1;
   dynamicList[2] = 2;
 
-  for (let i = 3; i <= numberOfStone; i++) {
+  for (let i = 3; i <= numberOfStone + 1; i++) {
     dynamicList[i] = dynamicList[i - 1] + dynamicList[i - 2];
   }
 
-  return dynamicList[numberOfStone];
+  return dynamicList[numberOfStone + 1];
 }
 
 console.log(getNumberOfCases(7));
