@@ -115,3 +115,4 @@
 ### Section9(Dynamic programming(동적계획법))
 
 - [계단오르기](https://github.com/sejineeee/algorithm-practice/blob/main/Section10/1.js)
+- [돌다리 건너기](https://github.com/sejineeee/algorithm-practice/blob/main/Section10/2.js)
