@@ -8,8 +8,6 @@
 function getLongestIncreasingSubSeq(list) {
   const dynamicList = new Array(list.length).fill(0);
 
-  let result = 0;
-
   dynamicList[0] = 1;
 
   for (let i = 1; i < list.length; i++) {
@@ -22,11 +20,9 @@ function getLongestIncreasingSubSeq(list) {
     }
 
     dynamicList[i] = max + 1;
-
-    result = Math.max(result, dynamicList[i]);
   }
 
-  return result;
+  return Math.max(...dynamicList);
 }
 
 const sequence = [5, 3, 7, 8, 6, 2, 9, 4];
