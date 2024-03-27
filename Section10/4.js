@@ -31,3 +31,5 @@ function getMinChange(count, list, changeMoney) {
 const coinList = [1, 2, 5];
 
 console.log(getMinChange(3, coinList, 15));
+
+module.exports = getMinChange;
