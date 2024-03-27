@@ -7,6 +7,9 @@
 // 각 동전의 종류는 100원을 넘지 않음
 
 function getMinChange(count, list, changeMoney) {
+  if (!changeMoney || !list || !count) {
+    throw new Error('함수에 입력값이 모두 주어졌는지 확인해주세요');
+  }
   const dynamicList = Array.from(
     {
       length: changeMoney + 1,
