@@ -117,3 +117,4 @@
 - [계단오르기](https://github.com/sejineeee/algorithm-practice/blob/main/Section10/1.js)
 - [돌다리 건너기](https://github.com/sejineeee/algorithm-practice/blob/main/Section10/2.js)
 - [최대 부분 증가 수열](https://github.com/sejineeee/algorithm-practice/blob/main/Section10/3.js)
+- [동전 교환(knapsack 알고리즘)](https://github.com/sejineeee/algorithm-practice/blob/main/Section10/4.js)
